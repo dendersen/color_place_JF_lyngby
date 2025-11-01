@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="color.css">
 </head>
 <body>
-    <input autofocus type="text" id="colorPicker" value="" onchange="updateColor()" placeholder="Enter color">
-    <div id="spot">A-</div>
-    
+    <form>
+        <input autofocus type="text" id="colorPicker" value="" onchange="updateColor()" placeholder="Enter color" list="colors">
+            <datalist id="colors"></datalist>
+    </form>
+    <div id="spot">location: A-</div>
+    <div id="Name">name: No Color Picked</div>
+    <div id="ID">ID: No Color Picked</div>
+
     <div id="colorTable"></div>
     <script src="manage.js"></script>
 </body>
