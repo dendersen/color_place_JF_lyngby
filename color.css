@@ -1,12 +1,28 @@
+body{
+    background: #ccc;
+    text
+}
+
 div.colorCell {
     display: inline-block;
-    width:12px;
-    height:12px;
-    margin: 2px;
-    padding-bottom: 7px;
+
+    width:4.5vw;
+    height:5vh;
+    margin-right: 0.25vw;
+    margin-bottom: 0.125vh;
+    
+    padding-bottom: 0px;
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 0px;
-    border: 3px solid black;
+    
+    border-left: 0.125vw;
+    border-right: 0.125vw;
+    border-top: 0.25vh;
+    border-bottom: 0.25vh;
+    
+    background-color: black;
+    border-style: solid;
+    border-color: black;
     color:black;
 }

@@ -85,8 +85,9 @@ function colorReset(){
     for (let col = 0; col < colorHeight; col++) {
         for (let row = 0; row < colorWidth; row++) {
             cell = document.getElementById("colorCell_" + row + "_" + col);
-            cell.style.border = "3px solid black";
-            document.getElementById("colorCell_" + row + "_" + col).style.color = "black";
+            cell.style.borderColor = "black";
+            cell.style.color = "black";
+            cell.style.backgroundColor = "black";
         }
     }
     document.getElementById("spot").innerHTML = "location: A-";
@@ -109,8 +110,9 @@ function setColor(spot) {
     document.getElementById("spot").innerHTML = "location: A" + (spot + 1);
     document.getElementById("Name").innerHTML = "name: " + colorsName[spot];
     document.getElementById("ID").innerHTML = "ID: " + colorsIDstr[spot];
-    document.getElementById("colorCell_" + row + "_" + col).style.border = "3px solid #ff0000ff";
+    document.getElementById("colorCell_" + row + "_" + col).style.borderColor = "#ff0000ff";
     document.getElementById("colorCell_" + row + "_" + col).style.color = "#ff0000ff";
+    document.getElementById("colorCell_" + row + "_" + col).style.backgroundColor = "#ff0000ff";
 }
 
 function init(){
