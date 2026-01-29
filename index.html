@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>where is the color</title>
-    <link rel="stylesheet" href="color.css">
-</head>
-<body>
-    <form onsubmit="updateColor();return 0;" action="#">
-        <input autofocus type="text" id="colorPicker" value="" onchange="updateColor()" placeholder="Enter color" list="colors">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>where is the color</title>
+        <link rel="stylesheet" href="color.css">
+    </head>
+    <body>
+        <form onsubmit="updateColor();return 0;" action="#">
+            <input autofocus type="text" id="colorPicker" value="" onchange="updateColor()" placeholder="Enter color" list="colors">
             <datalist id="colors"></datalist>
-    </form>
-    <div id="spot">location: A-</div>
-    <div id="Name">name: No Color Picked</div>
-    <div id="ID">ID: No Color Picked</div>
+        </form>
+        <div id="spot">location: A-</div>
+        <div id="Name">name: No Color Picked</div>
+        <div id="ID">ID: No Color Picked</div>
 
-    <div id="colorTable"></div>
-    <script src="manage.js"></script>
-</body>
+        <div id="colorTable"></div>
+
+        <p lang="en">
+            <h3>Hello! This is a simple color lookup site for the "XL-Byg Johannes Fog Lyngby" wall of jotun colors examples.</h3>
+            to use it, just type the color you are looking for in the box aabove and it will show you where it is located on the wall.<br><br>
+            if you find an error, for instance if a color is wromg or things have been moved around, feel free to send me an email at <a href="mailto:color@dendersen.dk">color@dendersen.dk</a> explaining the issue.<br>
+            Alternatively, submit an issue on the project's GitHub page <a href="https://github.com/dendersen/color_place_JF_lyngby/issues/new/">here</a>.
+            <br>
+            <b>Enjoy!</b>
+            <br><br>
+            <h4>Future Features Planned</h4>
+            color of square same as actual color<br>
+            better mobile support<br>
+            error submition on website<br>
+            link to jotun's color database<br>
+            help find similar colors / colors that match well (from jotun site)<br>
+            include small sesonal colors in lookup<br>
+            better design / layout<br>
+            <br>
+            (if you have more suggestions, feel free to email me at <a href="mailto:color@dendersen.dk">color@dendersen.dk</a>) or, submit an issue on GitHub <a href="https://github.com/dendersen/color_place_JF_lyngby/issues/new/">here</a>.
+        </p>
+        <script src="manage.js"></script>
+    </body>
 </html>
